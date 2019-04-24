@@ -1,0 +1,35 @@
+html
+    head
+        include head
+    body
+        .main
+            .container
+                form#booking-form.booking-form(method='POST')
+                    .form-group
+                        .input-group
+                            label.labelhome Booking Ticket Bus
+                    .form-group
+                        .input-group
+                            label.label Asal
+                            input.input--style-3(type='text', placeholder='Asal', name='Asal')
+                        .input-group
+                            label.label Tujuan
+                            input.input--style-3(type='text', placeholder='Tujuan', name='Tujuan')
+                    .form-group
+                        .input-group
+                            label.label Quantity
+                            input.input--style-3(type='text', placeholder='Quantity', name='Quantity')
+
+                        .form-date-to.form-icon
+                            label(for='date_to') Tanggal Berangkat
+                            input#date_to.date_to(type='date', placeholder='Pick a date')
+                    br
+                    .input-group
+                        label.label
+                        a.btn.btn-pill.btn--yellow(href='/harga') Search
+
+
+        // JS
+        script(src='asset/vendor/jquery/jquery.min.js')
+        script(src='/assetvendor/jquery-ui/jquery-ui.min.js')
+        script(src='asset/js/main.js')

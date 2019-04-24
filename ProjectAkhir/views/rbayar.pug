@@ -1,0 +1,33 @@
+html
+    head
+        include head
+    body
+        .main
+            .containerbayar
+                form#booking-form.booking-form(method='POST')
+                    .form-group
+                        .input-group
+                            label.labelbayar Pembayaran
+                    .input-group.mb-3
+                        .input-group-prepend
+                        select#inputGroupSelect03.custom-select(aria-label='metode bayar')
+                            option(selected='') Pilih Metode Pembayaran
+                            option(value='1') Alfamart
+                            option(value='2') Indomart
+                            option(value='3') Bri
+                            option(value='4') Mandiri
+                            option(value='5') BCA
+
+
+                        .form-group
+                            .input-group
+                                label.label Total Pembayaran
+                                input.input--style-3(type='text', placeholder='Total Pembayaran', name='Total Pembayaran')
+
+                        .input-group
+                            br
+                            a.btn.btn-pill.btn--yellow(href='#') Bayar
+        // JS
+        script(src='asset/vendor/jquery/jquery.min.js')
+        script(src='/assetvendor/jquery-ui/jquery-ui.min.js')
+        script(src='asset/js/main.js')

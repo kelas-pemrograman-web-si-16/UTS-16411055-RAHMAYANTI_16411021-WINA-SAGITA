@@ -1,0 +1,30 @@
+html
+    head
+        include head
+    body
+        .main
+            .container
+                form#booking-form.booking-form(method='POST')
+                    .form-group
+                        .input-group
+                            label.labeldatapesan Isi Data Pemesan
+                    .form-group
+                        .input-group
+                            label.label Email
+                            input.input--style-3(type='email', placeholder='Email', name='Email')
+                        .input-group
+                            label.label Password
+                            input.input--style-3(type='password', placeholder='Password', name='Password')
+                    br
+                    .form-group
+                        .input-group
+                            a.btn.btn-pill.btn--yellow(href='rbayar') Login
+                                 a(href="/regist") if you don't have an account Please Create Account
+
+
+
+
+        // JS
+        script(src='asset/vendor/jquery/jquery.min.js')
+        script(src='/assetvendor/jquery-ui/jquery-ui.min.js')
+        script(src='asset/js/main.js')

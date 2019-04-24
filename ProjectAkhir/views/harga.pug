@@ -1,0 +1,40 @@
+html
+    head
+        include head
+    body
+        .main
+            .container
+                form#booking-form.booking-form(method='POST')
+                    .form-group
+                        .input-group
+                            label.label Asal
+                        .form-group
+                            .input-group
+                                label.label Tujuan
+                        .form-group
+                            .input-group
+                                label.label Tanggal Berangkat
+                        .form-group
+                            .input-group
+                                label.label Jumlah Kursi
+
+
+                    .form-group
+                        .input-group
+                            label.label Jam Berangkat
+                        .form-group
+                            .input-group
+                                label.label Jam Tiba
+                        .form-group
+                            .input-group
+                                label.label Harga
+                    br
+                    .input-group
+                        label.label
+                        a.btn.btn-pill.btn--yellow(href='/pesan') Pesan
+
+
+        // JS
+        script(src='asset/vendor/jquery/jquery.min.js')
+        script(src='/assetvendor/jquery-ui/jquery-ui.min.js')
+        script(src='asset/js/main.js')

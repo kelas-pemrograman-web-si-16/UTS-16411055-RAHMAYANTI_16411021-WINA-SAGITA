@@ -1,0 +1,39 @@
+html
+    head
+        include head
+    body
+        .main
+            .container
+                form#booking-form.booking-form(method='POST')
+                    .form-group
+                        .input-group
+                            label.labelregis Registrasi
+                    .form-group
+                        .input-group
+                            label.label Nama
+                            input.input--style-3(type='text', placeholder='Nama', name='Nama')
+
+                        .input-group
+                            label.label Email
+                            input.input--style-3(type='email', placeholder='Email', name='Email')
+                    .form-group
+                        .input-group
+                            label.label No Telepon
+                            input.input--style-3(type='number', placeholder='No Telepon', name='No Telepon')
+
+                        .input-group
+                            label.label Password
+                            input.input--style-3(type='password', placeholder='Password', name='Password')
+                    .form-group
+                        .input-group
+                            br
+                            a.btn.btn-pill.btn--yellow(href='#') Submit
+                    br
+                    .input-group
+                        a(href="/pesan") if you already have an account Sign In
+
+
+        // JS
+        script(src='asset/vendor/jquery/jquery.min.js')
+        script(src='/assetvendor/jquery-ui/jquery-ui.min.js')
+        script(src='asset/js/main.js')
